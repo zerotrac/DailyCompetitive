@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 #include <cmath>
 #include <cstdlib>
 #include <cstring>
@@ -33,8 +32,18 @@ inline void quickread() {
     cin.tie(nullptr);
 }
 
-inline void work() {
+LL f[100010];
+int n, w, x, y;
 
+inline void work() {
+    cin >> n >> w;
+    for (int i = 0; i < n; ++i) {
+        cin >> x >> y;
+        for (int i = w; i >= x; --i) {
+            f[i] = max(f[i], f[i - x] + y);
+        }
+    }
+    cout << *max_element(f, f + w + 1) << "\n";
 }
 
 int main() {

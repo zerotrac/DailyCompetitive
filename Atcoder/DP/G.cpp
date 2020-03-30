@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 #include <cmath>
 #include <cstdlib>
 #include <cstring>
@@ -33,8 +32,39 @@ inline void quickread() {
     cin.tie(nullptr);
 }
 
-inline void work() {
+unordered_map<int, vector<int>> edges;
+int indeg[100010], f[100010];
+int n, m, x, y;
 
+inline void work() {
+    cin >> n >> m;
+    for (int i = 0; i < m; ++i) {
+        cin >> x >> y;
+        edges[x].push_back(y);
+        ++indeg[y];
+    }
+
+    queue<int> q;
+    for (int i = 1; i <= n; ++i) {
+        if (!indeg[i]) {
+            q.push(i);
+        }
+    }
+
+    int ans = 0;
+    while (!q.empty()) {
+        int u = q.front();
+        q.pop();
+        if (edges.count(u)) {
+            for (int v: edges[u]) {
+                ans = max(ans, f[v] = max(f[v], f[u] + 1));
+                if (--indeg[v] == 0) {
+                    q.push(v);
+                }
+            }
+        }
+    }
+    cout << ans << "\n";
 }
 
 int main() {

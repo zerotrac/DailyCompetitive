@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 #include <cmath>
 #include <cstdlib>
 #include <cstring>
@@ -33,8 +32,32 @@ inline void quickread() {
     cin.tie(nullptr);
 }
 
-inline void work() {
+LL f[100010];
+int n, w, x, y;
 
+inline void work() {
+    memset(f, -1, sizeof(f));
+    f[0] = 0;
+    
+    cin >> n >> w;
+    int totv = 0;
+    for (int i = 0; i < n; ++i) {
+        cin >> x >> y;
+        totv += y;
+        for (int j = totv; j >= y; --j) {
+            if (f[j - y] != -1) {
+                f[j] = min(f[j] == -1 ? LONG_MAX : f[j], f[j - y] + x);
+            }
+        }
+    }
+    int ans = 0;
+    for (int i = totv; i > 0; --i) {
+        if (f[i] != -1 && f[i] <= w) {
+            ans = i;
+            break;
+        }
+    }
+    cout << ans << "\n";
 }
 
 int main() {

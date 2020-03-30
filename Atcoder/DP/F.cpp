@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 #include <cmath>
 #include <cstdlib>
 #include <cstring>
@@ -33,8 +32,33 @@ inline void quickread() {
     cin.tie(nullptr);
 }
 
-inline void work() {
+int f[3010][3010];
+string s, t;
 
+inline void work() {
+    cin >> s >> t;
+    for (int i = 1; i <= s.size(); ++i) {
+        for (int j = 1; j <= t.size(); ++j) {
+            f[i][j] = max(max(f[i][j - 1], f[i - 1][j]), f[i - 1][j - 1] + (s[i - 1] == t[j - 1]));
+        }
+    }
+    string ans;
+    int i = s.size(), j = t.size();
+    while (i && j) {
+        if (f[i][j] == f[i][j - 1]) {
+            --j;
+        }
+        else if (f[i][j] == f[i - 1][j]) {
+            --i;
+        }
+        else {
+            ans += s[i - 1];
+            --i;
+            --j;
+        }
+    }
+    reverse(ans.begin(), ans.end());
+    cout << ans << endl;
 }
 
 int main() {

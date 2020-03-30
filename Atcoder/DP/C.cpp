@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 #include <cmath>
 #include <cstdlib>
 #include <cstring>
@@ -33,8 +32,17 @@ inline void quickread() {
     cin.tie(nullptr);
 }
 
-inline void work() {
+int n;
+int x, y, z;
 
+inline void work() {
+    cin >> n;
+    int a = 0, b = 0, c = 0;
+    for (int i = 0; i < n; ++i) {
+        cin >> x >> y >> z;
+        tie(a, b, c) = forward_as_tuple(max(b, c) + x, max(a, c) + y, max(a, b) + z);
+    }
+    cout << max(a, max(b, c)) << "\n";
 }
 
 int main() {

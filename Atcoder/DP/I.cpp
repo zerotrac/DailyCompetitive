@@ -33,8 +33,28 @@ inline void quickread() {
     cin.tie(nullptr);
 }
 
-inline void work() {
+double f[3000][3000];
+double p[3000];
+int n;
 
+inline void work() {
+    cin >> n;
+    for (int i = 1; i <= n; ++i) {
+        cin >> p[i];
+    }
+
+    f[0][0] = 1.;
+    for (int i = 1; i <= n; ++i) {
+        f[i][0] = f[i - 1][0] * (1. - p[i]);
+        for (int j = 1; j <= i; ++j) {
+            f[i][j] = f[i - 1][j] * (1. - p[i]) + f[i - 1][j - 1] * p[i];
+        }
+    }
+    double ans = 0.;
+    for (int i = (n + 1) / 2; i <= n; ++i) {
+        ans += f[n][i];
+    }
+    cout << setprecision(10) << ans << "\n";
 }
 
 int main() {
