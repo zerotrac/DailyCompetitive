@@ -86,4 +86,5 @@
 
 - 树状数组（或任何区间数据结构）优化 DP
 
-- 一般会有 <img src="https://latex.codecogs.com/gif.latex?f[i]=\max(f[l], f[l +1], \cdots, f[r]) + a[i]"/> 的形式
+- 一般会有 <img src="https://render.githubusercontent.com/render/math?math=f[i]=\max(f[l], f[l %2B 1], \cdots, f[r]) %2B a[i]"/> 的形式
+
