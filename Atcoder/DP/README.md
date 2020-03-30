@@ -88,3 +88,24 @@
 
 - 一般会有 <img src="https://render.githubusercontent.com/render/math?math=f[i]=\max(f[l], f[l %2B 1], \cdots, f[r]) %2B a[i]"/> 的形式
 
+#### R. Walk
+
+- 转换为矩阵乘法
+
+- 使用快速幂优化
+
+#### S. Digit Sum
+
+- 数位 DP
+
+- 状态一般可以表示为 <img src="https://render.githubusercontent.com/render/math?math=\textit{dp}[i][\textit{stats}][\textit{is\_bound}]"/>
+
+#### T. Permutation
+
+- LeetCode 903
+
+#### U. Grouping
+
+- 状态压缩 DP
+
+- 枚举子集的奇技淫巧：`for (int subset = mask; subset; subset = (subset - 1) & mask)`
