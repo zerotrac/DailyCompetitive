@@ -49,3 +49,41 @@
 - 有一点像马尔科夫链
 
 - 写成记忆化搜索会比较直观
+
+#### K. Stones
+
+- 必胜态
+
+- 必败态
+
+#### L. Deque
+
+- 一个人的先手状态是另一个人的后手状态
+
+#### M. Candies
+
+- 前缀和（部分和）优化
+
+- 本质上还是个背包
+
+#### N. Slimes
+
+- 区间 DP
+
+- 注意计算的顺序
+
+#### O. Matching
+
+- 状态压缩 DP
+
+#### P. Independent Set
+
+- 树形 DP
+
+- 给定的是无根树，需要指定一个根（例如 1 号节点）
+
+#### Q. Flowers
+
+- 树状数组（或任何区间数据结构）优化 DP
+
+- 一般会有 <img src="https://latex.codecogs.com/gif.latex?f[i]=\max(f[l], f[l +1], \cdots, f[r]) + a[i]"/> 的形式
