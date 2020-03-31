@@ -109,3 +109,27 @@
 - 状态压缩 DP
 
 - 枚举子集的奇技淫巧：`for (int subset = mask; subset; subset = (subset - 1) & mask)`
+
+#### V. Subtree
+
+- 树形 DP
+
+- 换根
+
+#### W. Intervals
+
+- dp[i] = max{dp[j] + (所有左端点大于 j 并且右端点大于等于 i 的区间的权值之和)}
+
+- 记 g[j] = max{...} 中的 ...，实时维护 g[j]
+
+    - 有区间以 i 为左端点：所有的 g[j] 加上权值
+
+    - 有区间以 i 为右端点：所有满足 j < 左端点的 g[j] 减去权值
+
+- 使用带懒标记的线段树
+
+#### X. Tower
+
+- [特殊的排序技巧](https://codeforces.com/blog/entry/63533)
+
+- 排完序之后就是背包了
