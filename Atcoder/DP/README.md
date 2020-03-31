@@ -86,7 +86,7 @@
 
 - 树状数组（或任何区间数据结构）优化 DP
 
-- 一般会有 <img src="https://render.githubusercontent.com/render/math?math=f[i]=\max(f[l], f[l %2B 1], \cdots, f[r]) %2B a[i]"/> 的形式
+- 一般会有 `f[i] = max(f[l], f[l + 1], ..., f[r]) + a[i]` 的形式
 
 #### R. Walk
 
@@ -98,7 +98,7 @@
 
 - 数位 DP
 
-- 状态一般可以表示为 <img src="https://render.githubusercontent.com/render/math?math=\textit{dp}[i][\textit{stats}][\textit{is\_bound}]"/>
+- 状态一般可以表示为 `dp[i][stats][bound]`
 
 #### T. Permutation
 
@@ -120,13 +120,13 @@
 
 #### W. Intervals
 
-- dp[i] = max{dp[j] + (所有左端点大于 j 并且右端点大于等于 i 的区间的权值之和)}
+- `dp[i] = max{dp[j] + (所有左端点大于 j 并且右端点大于等于 i 的区间的权值之和)}`
 
-- 记 g[j] = max{...} 中的 ...，实时维护 g[j]
+- 记 `g[j] = max{...}` 中的 `...`，实时维护 `g[j]`
 
-    - 有区间以 i 为左端点：所有的 g[j] 加上权值
+    - 有区间以 `i` 为左端点：所有的 `g[j]` 加上权值
 
-    - 有区间以 i 为右端点：所有满足 j < 左端点的 g[j] 减去权值
+    - 有区间以 `i` 为右端点：所有满足 `j < 左端点` 的 `g[j]` 减去权值
 
 - 使用带懒标记的线段树
 
