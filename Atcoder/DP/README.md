@@ -108,7 +108,9 @@
 
 - 状态压缩 DP
 
-- 枚举子集的奇技淫巧：`for (int subset = mask; subset; subset = (subset - 1) & mask)`
+- 枚举子集的奇技淫巧
+
+    - `for (int subset = mask; subset; subset = (subset - 1) & mask)`
 
 #### V. Subtree
 
