@@ -34,13 +34,37 @@ inline void quickread() {
     cin.tie(nullptr);
 }
 
-inline void work() {
+int a[200010];
+int n;
 
+inline void work() {
+    cin >> n;
+    for (int i = 0; i < n; ++i) {
+        cin >> a[i];
+    }
+    int ans = 2;
+    int diff = a[1] - a[0], count = 2;
+    for (int i = 2; i < n; ++i) {
+        if (a[i] - a[i - 1] == diff) {
+            ++count;
+        }
+        else {
+            diff = a[i] - a[i - 1];
+            count = 2;
+        }
+        ans = max(ans, count);
+    }
+    cout << ans << "\n";
 }
 
 int main() {
-    // freopen("input.txt", "r", stdin);
+    freopen("input.txt", "r", stdin);
     quickread();
-    work();
+    int T;
+    cin >> T;
+    for (int _ = 1; _ <= T; ++_) {
+        cout << "Case #" << _ << ": ";
+        work();
+    }
     return 0;
 }

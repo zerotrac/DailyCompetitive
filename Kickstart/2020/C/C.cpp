@@ -1,6 +1,4 @@
 #include <iostream>
-#include <iomanip>
-#include <fstream>
 #include <cmath>
 #include <cstdlib>
 #include <cstring>
@@ -34,13 +32,37 @@ inline void quickread() {
     cin.tie(nullptr);
 }
 
-inline void work() {
+int n, x;
 
+inline void work() {
+    cin >> n;
+    unordered_map<int, int> prev = {{0, 1}};
+    LL ans = 0;
+    int sum = 0;
+    int sub_cur = 0, sub_max = 0;
+    for (int i = 0; i < n; ++i) {
+        cin >> x;
+        sum += x;
+        sub_cur = max(sub_cur + x, 0);
+        sub_max = max(sub_max, sub_cur);
+        for (int j = 0; j * j <= sub_max; ++j) {
+            if (prev.count(sum - j * j)) {
+                ans += prev[sum - j * j];
+            }
+        }
+        ++prev[sum];
+    }
+    cout << ans << "\n";
 }
 
 int main() {
-    // freopen("input.txt", "r", stdin);
+    // freopen("C.txt", "r", stdin);
     quickread();
-    work();
+    int T;
+    cin >> T;
+    for (int _ = 1; _ <= T; ++_) {
+        cout << "Case #" << _ << ": ";
+        work();
+    }
     return 0;
 }

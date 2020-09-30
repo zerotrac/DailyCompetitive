@@ -29,18 +29,13 @@ using PLL = pair<LL, LL>;
 // const int mod = 1e9 + 7;
 // const int mod = 998244353;
 
-inline void quickread() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-}
+class Solution {
+public:
 
-inline void work() {
-
-}
+};
 
 int main() {
-    // freopen("input.txt", "r", stdin);
-    quickread();
-    work();
+    Solution solution;
+
     return 0;
 }

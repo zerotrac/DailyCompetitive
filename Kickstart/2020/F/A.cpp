@@ -34,13 +34,32 @@ inline void quickread() {
     cin.tie(nullptr);
 }
 
-inline void work() {
+int a[100010], id[100010];
+int n, k;
 
+inline void work() {
+    cin >> n >> k;
+    for (int i = 1; i <= n; ++i) {
+        cin >> a[i];
+        id[i] = i;
+    }
+    sort(id + 1, id + n + 1, [&](int i, int j) {
+        return make_pair((a[i] - 1) / k + 1, i) < make_pair((a[j] - 1) / k + 1, j);
+    });
+    for (int i = 1; i <= n; ++i) {
+        cout << id[i] << " ";
+    }
+    cout << "\n";
 }
 
 int main() {
     // freopen("input.txt", "r", stdin);
     quickread();
-    work();
+    int T;
+    cin >> T;
+    for (int _ = 1; _ <= T; ++_) {
+        cout << "Case #" << _ << ": ";
+        work();
+    }
     return 0;
 }

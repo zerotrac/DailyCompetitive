@@ -34,8 +34,11 @@ inline void quickread() {
     cin.tie(nullptr);
 }
 
-inline void work() {
+LL a, b, c, d;
 
+inline void work() {
+    cin >> a >> b >> c >> d;
+    cout << max({a * c, a * d, b * c, b * d}) << "\n";
 }
 
 int main() {

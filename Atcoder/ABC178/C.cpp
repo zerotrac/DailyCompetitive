@@ -26,7 +26,7 @@ using ULL = unsigned long long;
 using PII = pair<int, int>;
 using PIL = pair<int, LL>;
 using PLL = pair<LL, LL>;
-// const int mod = 1e9 + 7;
+const int mod = 1e9 + 7;
 // const int mod = 998244353;
 
 inline void quickread() {
@@ -34,8 +34,20 @@ inline void quickread() {
     cin.tie(nullptr);
 }
 
-inline void work() {
+int n;
 
+inline void work() {
+    cin >> n;
+    int p = 1;
+    int q = 1;
+    int r = 1;
+    for (int i = 0; i < n; ++i) {
+        p = (LL)p * 10 % mod;
+        q = (LL)q * 9 % mod;
+        r = (LL)r * 8 % mod;
+    }
+    int ans = ((p - q * 2 % mod + r) % mod + mod) % mod;
+    cout << ans << "\n";
 }
 
 int main() {

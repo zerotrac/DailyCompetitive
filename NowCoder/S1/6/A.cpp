@@ -29,18 +29,23 @@ using PLL = pair<LL, LL>;
 // const int mod = 1e9 + 7;
 // const int mod = 998244353;
 
-inline void quickread() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-}
-
-inline void work() {
-
-}
+class Solution {
+public:
+    long long rotateRight(string str, int k) {
+        long long ans = 0;
+        int n = str.size();
+        for (int i = n - k; i < n; ++i) {
+            ans = ans * 2 + (str[i] - '0');
+        }
+        for (int i = 0; i < n - k; ++i) {
+            ans = ans * 2 + (str[i] - '0');
+        }
+        return ans;
+    }
+};
 
 int main() {
-    // freopen("input.txt", "r", stdin);
-    quickread();
-    work();
+    Solution solution;
+    cout << solution.rotateRight("10110", 2);
     return 0;
 }

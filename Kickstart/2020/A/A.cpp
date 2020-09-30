@@ -1,6 +1,4 @@
 #include <iostream>
-#include <iomanip>
-#include <fstream>
 #include <cmath>
 #include <cstdlib>
 #include <cstring>
@@ -34,13 +32,35 @@ inline void quickread() {
     cin.tie(nullptr);
 }
 
-inline void work() {
+int a[100010];
+int n, x;
 
+inline void work() {
+    cin >> n >> x;
+    for (int i = 0; i < n; ++i) {
+        cin >> a[i];
+    }
+    sort(a, a + n);
+    
+    int sum = 0;
+    for (int i = 0; i < n; ++i) {
+        sum += a[i];
+        if (sum > x) {
+            cout << i << "\n";
+            return;
+        }
+    }
+    cout << n << "\n";
 }
 
 int main() {
-    // freopen("input.txt", "r", stdin);
+    // freopen("A.txt", "r", stdin);
     quickread();
-    work();
+    int T;
+    cin >> T;
+    for (int _ = 1; _ <= T; ++_) {
+        cout << "Case #" << _ << ": ";
+        work();
+    }
     return 0;
 }

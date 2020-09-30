@@ -35,7 +35,9 @@ inline void quickread() {
 }
 
 inline void work() {
-
+    int x;
+    cin >> x;
+    cout << 1 - x << "\n";
 }
 
 int main() {

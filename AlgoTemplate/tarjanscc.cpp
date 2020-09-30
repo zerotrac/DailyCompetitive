@@ -78,10 +78,8 @@ private:
     static void getCuttingEdge_(const vector<vector<int>>& edges, int u, int parent, vector<PII>& ans) {
         low[u] = dfn[u] = ++ts;
         fa[u] = parent;
-        int child = 0;
         for (int v: edges[u]) {
             if (dfn[v] == -1) {
-                ++child;
                 getCuttingEdge_(edges, v, u, ans);
                 low[u] = min(low[u], low[v]);
                 if (low[v] > dfn[u]) {
@@ -120,7 +118,6 @@ public:
         dfn.assign(n, -1);
         fa.assign(n, -1);
         ts = -1;
-        scnt = 0;
         vector<int> ans;
         for (int i = 0; i < n; ++i) {
             if (dfn[i] == -1) {
@@ -137,7 +134,6 @@ public:
         dfn.assign(n, -1);
         fa.assign(n, -1);
         ts = -1;
-        scnt = 0;
         vector<pair<int, int>> ans;
         for (int i = 0; i < n; ++i) {
             if (dfn[i] == -1) {

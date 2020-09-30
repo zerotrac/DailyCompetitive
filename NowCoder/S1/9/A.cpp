@@ -29,18 +29,27 @@ using PLL = pair<LL, LL>;
 // const int mod = 1e9 + 7;
 // const int mod = 998244353;
 
-inline void quickread() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-}
-
-inline void work() {
-
-}
+class Solution {
+public:
+    int solve(int n, int m, vector<int>& a) {
+        int ans = 0;
+        int l = 0, used = 0;
+        for (int r = 0; r < n; ++r) {
+            used += 1 - a[r];
+            while (used > m) {
+                used -= 1 - a[l];
+                ++l;
+            }
+            ans = max(ans, r - l + 1);
+        }
+        return ans;
+    }
+};
 
 int main() {
-    // freopen("input.txt", "r", stdin);
-    quickread();
-    work();
+    Solution solution;
+    vector<int> v = {1, 0, 0, 1, 1, 1};
+    cout << solution.solve(6, 1, v) << "\n";
+    cout << solution.solve(6, 2, v) << "\n";
     return 0;
 }

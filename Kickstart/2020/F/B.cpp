@@ -34,13 +34,37 @@ inline void quickread() {
     cin.tie(nullptr);
 }
 
-inline void work() {
+pair<int, int> a[100010];
+int n, k;
 
+inline void work() {
+    cin >> n >> k;
+    for (int i = 1; i <= n; ++i) {
+        cin >> a[i].first >> a[i].second;
+    }
+    sort(a + 1, a + n + 1);
+    int ans = 0;
+    int cur = a[1].first;
+    for (int i = 1; i <= n; ++i) {
+        if (cur < a[i].second) {
+            cur = max(cur, a[i].first);
+            int delta = a[i].second - cur;
+            int need = delta / k + (delta % k != 0);
+            ans += need;
+            cur += need * k;
+        }
+    }
+    cout << ans << "\n";
 }
 
 int main() {
     // freopen("input.txt", "r", stdin);
     quickread();
-    work();
+    int T;
+    cin >> T;
+    for (int _ = 1; _ <= T; ++_) {
+        cout << "Case #" << _ << ": ";
+        work();
+    }
     return 0;
 }

@@ -34,8 +34,26 @@ inline void quickread() {
     cin.tie(nullptr);
 }
 
-inline void work() {
+int n;
+LL x, y;
 
+inline void work() {
+    cin >> n;
+    cin >> x >> y;
+    LL a = x + y;
+    LL b = x - y;
+    LL c = -x + y;
+    LL d = -x - y;
+    LL ans = 0;
+    for (int i = 1; i <= n; ++i) {
+        cin >> x >> y;
+        ans = max({ans, a - x - y, b - x + y, c + x - y, d + x + y});
+        a = max(a, x + y);
+        b = max(b, x - y);
+        c = max(c, -x + y);
+        d = max(d, -x - y);
+    }
+    cout << ans << "\n";
 }
 
 int main() {

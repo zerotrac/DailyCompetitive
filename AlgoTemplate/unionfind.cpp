@@ -28,11 +28,13 @@ public:
         --comp_cnt;
     }
     
-    void findAndUnite(int x, int y) {
+    bool findAndUnite(int x, int y) {
         int x0 = findset(x);
         int y0 = findset(y);
         if (x0 != y0) {
             unite(x0, y0);
+            return true;
         }
+        return false;
     }
 };
