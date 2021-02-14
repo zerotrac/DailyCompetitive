@@ -1,10 +1,10 @@
-#### Codeforces
+## Codeforces
 
 | Contest | Finished | Work in Progress |
 | :- | :-: | :-: |
 | 701 Div 2 | A B C D F | E |
 
-#### AtCoder
+## AtCoder
 
 | Contest | Finished | Work in Progress |
 | :- | :-: | :-: |
