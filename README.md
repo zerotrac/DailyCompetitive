@@ -9,6 +9,7 @@
 | Contest | Finished | Work in Progress |
 | :- | :-: | :-: |
 | ARC 112 | A B C D | E F |
+| ABC 192 | A B C D E F | |
 
 ## ICPC
 
