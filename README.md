@@ -2,7 +2,7 @@
 
 | Contest | Finished | Work in Progress |
 | :- | :-: | :-: |
-| 701 Div 2 | A B C D F | E |
+| 701 Div 2 | A B C D E F |
 
 ## AtCoder
 
