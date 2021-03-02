@@ -2,7 +2,8 @@
 
 | Contest | Finished | Work in Progress |
 | :- | :-: | :-: |
-| 701 Div 2 | A B C D E F |
+| 701 Div 2 | A B C D E F | |
+| Global Round 13 | A B C D | E F G H I |
 
 ## AtCoder
 
@@ -11,7 +12,7 @@
 | ARC 112 | A B C D | E F |
 | ABC 192 | A B C D E F | |
 | ARC 113 | A B C D | E F |
-| ABC 193 | A B C D E | F |
+| ABC 193 | A B C D E F | |
 
 ## ICPC
 
