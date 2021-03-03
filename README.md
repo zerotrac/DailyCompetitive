@@ -3,7 +3,7 @@
 | Contest | Finished | Work in Progress |
 | :- | :-: | :-: |
 | 701 Div 2 | A B C D E F | |
-| Global Round 13 | A B C D | E F G H I |
+| Global Round 13 | A B C D E F G | H I |
 
 ## AtCoder
 
