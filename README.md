@@ -13,6 +13,7 @@
 | ABC 192 | A B C D E F | |
 | ARC 113 | A B C D | E F |
 | ABC 193 | A B C D E F | |
+| ABC 194 | A B C D E F | |
 
 ## ICPC
 
