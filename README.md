@@ -6,6 +6,7 @@
 | Global Round 13 | A B C D E F G | H I |
 | 704 Div 2 | A B C D E F | |
 | 705 Div 2 | A B C D E F | |
+| 706 Div 1 | A B C D | E F |
 ## AtCoder
 
 | Contest | Finished | Work in Progress |
