@@ -7,7 +7,8 @@
 | 704 Div 2 | A B C D E F | |
 | 705 Div 2 | A B C D E F | |
 | 706 Div 1 | A B C D | E F |
-| Edu 105 | A B C D E F | |
+| Educational 105 | A B C D E F | |
+| 709 Div 1 | A B C D | E F |
 ## AtCoder
 
 | Contest | Finished | Work in Progress |
@@ -20,6 +21,7 @@
 | ABC 195 | A B C D E F | |
 | ARC 114 | A B C E | D F |
 | ABC 196 | A B C D E F | |
+| ARC 115 | A B C | D E F |
 
 ## ICPC
 
@@ -30,3 +32,9 @@
 | NERC 2020 | [Official](https://neerc.ifmo.ru/information/index.html) / [Codeforces](https://codeforces.com/gym/102896) | A B C D E G K M L | F H I J N O |
 | SoCal 2020 | [Official](http://socalcontest.org/current/index.shtml) | C F I J K | (Judging is N/A after contest) |
 | Hsinchu 2020 | [Official](https://icpc2020.ntub.edu.tw/) / [Codeforces](https://codeforces.com/gym/102835) | A B C E F G H I K M | D J L |
+
+## Google
+
+| Contest | Finished | Work in Progress |
+| :- | :-: | :-: |
+| Kickstart 2021 A | A B C D | |
