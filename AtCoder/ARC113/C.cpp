@@ -50,7 +50,6 @@ inline void work() {
         }
         auto it1 = lower_bound(pp[ch].begin(), pp[ch].end(), l);
         auto it2 = prev(upper_bound(pp[ch].begin(), pp[ch].end(), r));
-        // cout << "fuck = " << ch << " " << l << " " << r << " " << it2 - it1 + 1 << endl;
         return it2 - it1 + 1;
     };
 
@@ -69,7 +68,6 @@ inline void work() {
             pos = i;
             --i;
         }
-        // cout << "ans = " << ans << endl;
     }
     cout << ans << "\n";
 }
