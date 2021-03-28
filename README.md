@@ -3,27 +3,29 @@
 | Contest | Finished | Work in Progress |
 | :- | :-: | :-: |
 | 701 Div 2 | A B C D E F | |
-| Global Round 13 | A B C D E F G | H I |
 | 704 Div 2 | A B C D E F | |
 | 705 Div 2 | A B C D E F | |
 | 706 Div 1 | A B C D | E F |
-| Educational 105 | A B C D E F | |
+| 708 Div 2 | A B C D E |
 | 709 Div 1 | A B C D | E F |
+| Educational 105 | A B C D E F | |
+| Global Round 13 | A B C D E F G | H I |
+
 ## AtCoder
 
 | Contest | Finished | Work in Progress |
 | :- | :-: | :-: |
-| ARC 112 | A B C D E | F |
 | ABC 192 | A B C D E F | |
-| ARC 113 | A B C D | E F |
 | ABC 193 | A B C D E F | |
 | ABC 194 | A B C D E F | |
 | ABC 195 | A B C D E F | |
-| ARC 114 | A B C E | D F |
 | ABC 196 | A B C D E F | |
-| ARC 115 | A B C D E | F |
 | ABC 197 | A B C D E F | |
+| ARC 112 | A B C D E | F |
+| ARC 113 | A B C D | E F |
+| ARC 114 | A B C E | D F |
 | ARC 115 | A B C D E | F |
+| ARC 116 | A B C D E | F |
 
 ## ICPC
 
