@@ -9,8 +9,9 @@
 | 708 Div 2 | A B C D E |
 | 709 Div 1 | A B C D | E F |
 | 710 Div 3 | F G | |
+| 711 Div 2 | A B C D E | F |
 | Educational 105 | A B C D E F | |
-| Educational 106 | A B C | D E F G |
+| Educational 106 | A B C D E | F G |
 | Global Round 13 | A B C D E F G | H I |
 
 ## AtCoder
