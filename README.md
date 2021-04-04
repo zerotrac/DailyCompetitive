@@ -39,6 +39,7 @@
 | NERC 2020 | [Official](https://neerc.ifmo.ru/information/index.html) / [Codeforces](https://codeforces.com/gym/102896) | A B C D E G K M L | F H I J N O |
 | SoCal 2020 | [Official](http://socalcontest.org/current/index.shtml) | C F I J K | (Judging is N/A after contest) |
 | Hsinchu 2020 | [Official](https://icpc2020.ntub.edu.tw/) / [Codeforces](https://codeforces.com/gym/102835) | A B C E F G H I K M | D J L |
+| NWERC 2020 | [Official](https://www.nwerc.eu/) / [Kattis](https://open.kattis.com/problem-sources/Northwestern%20Europe%20Regional%20Contest%20%28NWERC%29%202020) | A C D E F G H I J K | B |
 
 ## Google
 
