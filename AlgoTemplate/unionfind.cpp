@@ -5,10 +5,10 @@ using namespace std;
 
 class UF {
 public:
-    vector<int> fa;
-    vector<int> sz;
     int n;
     int comp_cnt;
+    vector<int> fa;
+    vector<int> sz;
     
 public:
     UF(int _n): n(_n), comp_cnt(_n), fa(_n), sz(_n, 1) {
@@ -44,10 +44,10 @@ public:
 
 class UnionFind {
 public:
-    vector<int> parent;
-    vector<int> size;
     int n;
     int setCount;
+    vector<int> parent;
+    vector<int> size;
     
 public:
     UnionFind(int _n): n(_n), setCount(_n), parent(_n), size(_n, 1) {

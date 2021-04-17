@@ -12,7 +12,7 @@
 | 711 Div 2 | A B C D E F | |
 | 712 Div 1 | A B C D | E F |
 | 713 Div 3 | F G | |
-| 714 Div 2 | D | E F |
+| 714 Div 2 | D F | E |
 | 715 Div 1 | A B C | D E F |
 | Educational 37 | E | |
 | Educational 105 | A B C D E F | |
@@ -35,6 +35,7 @@
 | ARC 114 | A B C E | D F |
 | ARC 115 | A B C D E | F |
 | ARC 116 | A B C D E | F |
+| JSC 2021 | A B C D E F G | H |
 
 ## ICPC
 
