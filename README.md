@@ -35,6 +35,7 @@
 | ARC 114 | A B C E | D F |
 | ARC 115 | A B C D E | F |
 | ARC 116 | A B C D E | F |
+| ARC 117 | A B C D | E F |
 | JSC 2021 | A B C D E F G | H |
 
 ## ICPC
@@ -48,7 +49,7 @@
 | Hsinchu 2020 | [Official](https://icpc2020.ntub.edu.tw/) / [Codeforces](https://codeforces.com/gym/102835) | A B C E F G H I K M | D J L |
 | NWERC 2020 | [Official](https://www.nwerc.eu/) / [Kattis](https://open.kattis.com/problem-sources/Northwestern%20Europe%20Regional%20Contest%20%28NWERC%29%202020) | A C D E F G H I J K | B |
 | Seoul 2020 | [Official](http://icpckorea.org/) / [Codeforces](https://codeforces.com/gym/102920) / [Analysis](https://koosaga.com/263) | A B C E G J L | D F H I K |
-| NERC Southern 2020 | [Official](https://neerc.ifmo.ru/subregions/southern.html) / [Codeforces](https://codeforces.com/contest/1468) | A C D E F G H I J K M N | B L |
+| NERC Southern 2020 | [Official](https://neerc.ifmo.ru/subregions/southern.html) / [Codeforces](https://codeforces.com/contest/1468) | A C D E F G H I J K L M N | B |
 
 ## Google
 
