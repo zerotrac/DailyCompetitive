@@ -35,7 +35,7 @@
 | ARC 114 | A B C E | D F |
 | ARC 115 | A B C D E | F |
 | ARC 116 | A B C D E | F |
-| ARC 117 | A B C D | E F |
+| ARC 117 | A B C D E | F |
 | JSC 2021 | A B C D E F G | H |
 
 ## ICPC
