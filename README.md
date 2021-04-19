@@ -56,5 +56,6 @@
 | Contest | Finished | Work in Progress |
 | :- | :-: | :-: |
 | Kickstart 2021 A | A B C D | |
+| Kickstart 2021 B | A B C D | |
 | Codejam 2021 Qualification | A B C D E | |
 | Codejam 2021 Round 1A | A B | C |
