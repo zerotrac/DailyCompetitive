@@ -29,7 +29,7 @@
 | ABC 195 | A B C D E F | |
 | ABC 196 | A B C D E F | |
 | ABC 197 | A B C D E F | |
-| ABC 198 | A B C D E | F |
+| ABC 198 | A B C D E F | |
 | ARC 112 | A B C D E | F |
 | ARC 113 | A B C D | E F |
 | ARC 114 | A B C E | D F |
